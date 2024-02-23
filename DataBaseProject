@@ -1,0 +1,20 @@
+create database PatnaBankOfIndia;
+
+//using database
+use PatnaBankOfIndia;
+
+//creating table for storing data
+create table CustomersAccount
+(
+ SerialNo varchar(30) primary key,
+ AccountNo varchar(30),
+ CustMobileNumber varchar(30),
+ CustName varchar(30),
+ CustAddress varchar(30),
+ InitialDepositAmount varchar(30)
+);
+
+select * from CustomersAccount;
+
+//inserting value example
+insert into CustomersAccount values('1','1234','Demo','Demo','Virtual','0');
